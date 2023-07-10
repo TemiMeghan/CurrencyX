@@ -17,7 +17,7 @@ def get_nation():
             nation_name = 'Switzerland'
         else:
             nation_name = None# checks for equality
-            
+          
         if nation_name:
             data = nasdaqdatalink.get(f'ECONOMIST/BIGMAC_{nation_code}', start_date='2021-01-31', end_date='2021-01-31') # assigns nasdaq api to data
 
